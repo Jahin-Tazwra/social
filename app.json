@@ -1,0 +1,60 @@
+{
+  "expo": {
+    "name": "Shomaj",
+    "slug": "shomaj",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "entryPoint": "./index.js",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.yourcompany.shomaj",
+      "config": {
+        "googleMapsApiKey": "AIzaSyDYSsIhRYqc7zNr0Tz_yCTrDnmf-9QOWXw"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.yourcompany.shomaj",
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyDYSsIhRYqc7zNr0Tz_yCTrDnmf-9QOWXw"
+        }
+      },
+      "permissions": [
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_FINE_LOCATION"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow Shomaj to use your location to help you connect with people nearby."
+        }
+      ],
+      "expo-maps"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "7d815f38-1038-4762-ae23-e125486e6a28"
+      }
+    }
+  }
+}
